@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    align-items: center;
+    background: linear-gradient(to right top, #c156fc, #c9ce49);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.glass {
+    background: white;
+    backdrop-filter: blur(1rem);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255,255,255, 0.3));
+    border: 1px solid white;
+    border-radius: 2rem;
+    display: flex;
+    min-height: 80vh;
+    width: 60%;
+    z-index: 2;
+}
+
+.circle1, .circle2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255,255,255, 0.5));
+    border-radius: 50%;
+    height: 10rem;
+    position: absolute;
+    width: 10rem;
+    z-index: 1.8;
+
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 15%;
+}
+
+.dashboard {
+    display: flex;
+    flex: 1;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255,255,255, 0.3));
+    border-radius: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.games {
+    flex: 2;
+}
+
+.pro {
+    background: linear-gradient(to right top, #c156fc, #c9ce49);
+    border-radius: 2rem;
+    margin: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.pro img {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+}
+
+.pro h2 {
+    width: 40%;
+}
